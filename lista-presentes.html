@@ -28,26 +28,50 @@
     margin: 0 auto 60px;
   }
   header .eyebrow{
-    display: block;
-    font-family: 'Allura', cursive;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0;
-    text-transform: none;
-    font-size: clamp(54px, 8vw, 78px);
-    color: var(--rose-dark);
-    line-height: 1.05;
-    margin-bottom: 8px;
+    display:block;
+    font-family:'Cormorant Garamond', serif;
+    font-weight:400;
+    letter-spacing:.34em;
+    text-transform:uppercase;
+    font-size:clamp(25px,4.2vw,39px);
+    color:var(--rose-dark);
+    line-height:1.15;
+    margin-bottom:3px;
+    padding-left:.34em;
   }
-  header h1{
-    font-family: 'Jost', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-size: 13px;
-    color: var(--rose-mid);
-    line-height: 1.4;
+  header .script-title{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    width:100%;
+    font-family:'Allura', cursive;
+    font-weight:400;
+    letter-spacing:.02em;
+    text-transform:none;
+    font-size:clamp(43px,7vw,61px);
+    color:var(--rose-dark);
+    line-height:.95;
+    white-space:nowrap;
+  }
+  header .script-title::before,
+  header .script-title::after{
+    content:"";
+    height:1px;
+    background:rgba(193,125,148,.72);
+    flex:1 1 80px;
+    max-width:155px;
+  }
+  header .gift-subtitle{
+    margin-top:20px;
+    font-family:'Jost',sans-serif;
+    font-weight:300;
+    font-size:11px;
+    letter-spacing:.28em;
+    text-transform:uppercase;
+    color:var(--rose-mid);
+    opacity:1;
+    line-height:1.4;
   }
   header p{
     margin-top: 16px;
@@ -142,10 +166,6 @@
     color: var(--rose-mid);
     font-weight: 300;
   }
-  header .eyebrow{
-    display:block;
-    font-size: clamp(54px, 10vw, 78px);
-  }
   .filters{
     max-width: 640px;
     margin: 32px auto 48px;
@@ -184,13 +204,21 @@
   .card.hidden{
     display: none;
   }
+
+  @media (max-width:560px){
+    header .eyebrow{font-size:clamp(21px,7vw,29px);letter-spacing:.25em;padding-left:.25em;}
+    header .script-title{font-size:clamp(38px,12vw,50px);gap:7px;}
+    header .script-title::before,header .script-title::after{max-width:70px;}
+    header .gift-subtitle{font-size:10px;letter-spacing:.22em;margin-top:16px;}
+  }
 </style>
 </head>
 <body>
 
 <header>
-  <span class="eyebrow">Meus 15 anos</span>
-  <h1>Sugestões de Presentes</h1>
+  <span class="eyebrow">MARIANA NUNES</span>
+  <h1 class="script-title"><span>quinze anos</span></h1>
+  <p class="gift-subtitle">SUGESTÕES DE PRESENTES</p>
 </header>
 
 <div class="filters">
