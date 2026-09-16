@@ -5,14 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sugestões de Presentes · Mariana</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --rose-dark: #8c5c59;
-    --bg: #fdf2f1;
-    --rose-mid: #c7908d;
-    --rose-light: rgba(199, 144, 141, 0.28);
-    --ink: #2f2927;
+    --rose-dark: #c17d94;
+    --bg: #faf6ef;
+    --rose-mid: #d1a3b3;
+    --rose-light: rgba(209, 163, 179, 0.22);
+    --rose-accent: #c17d94;
+    --ink: #3a332f;
   }
   *{box-sizing:border-box; margin:0; padding:0;}
   body{
@@ -27,20 +28,28 @@
     margin: 0 auto 60px;
   }
   header .eyebrow{
-    font-weight: 400;
-    letter-spacing: 4px;
+    display: block;
+    font-family: 'Bodoni Moda', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-variant-numeric: lining-nums;
+    font-feature-settings: "lnum" 1;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    font-size: 12px;
-    color: var(--rose-mid);
-    margin-bottom: 14px;
+    font-size: clamp(30px, 5vw, 46px);
+    color: var(--rose-dark);
+    line-height: 1.2;
+    margin-bottom: 10px;
   }
   header h1{
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-weight: 500;
-    font-size: clamp(34px, 5vw, 52px);
-    color: var(--rose-dark);
-    line-height: 1.15;
+    font-family: 'Jost', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--rose-mid);
+    line-height: 1.4;
   }
   header p{
     margin-top: 16px;
@@ -137,12 +146,7 @@
   }
   header .eyebrow{
     display:block;
-    font-weight: 400;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    font-size: 12px;
-    color: var(--rose-mid);
-    margin-bottom: 14px;
+    font-size: clamp(28px, 8vw, 40px);
   }
   .filters{
     max-width: 640px;
@@ -159,7 +163,7 @@
     text-transform: uppercase;
     font-size: 12px;
     color: var(--rose-dark);
-    background: #fff;
+    background: var(--rose-light);
     border: 1px solid var(--rose-light);
     border-radius: 999px;
     padding: 10px 20px;
@@ -167,11 +171,12 @@
     transition: background .2s ease, color .2s ease, border-color .2s ease;
   }
   .filters button:hover{
-    border-color: var(--rose-dark);
+    border-color: var(--rose-accent);
+    background: rgba(201, 141, 132, 0.3);
   }
   .filters button.active{
-    background: var(--rose-dark);
-    border-color: var(--rose-dark);
+    background: var(--rose-accent);
+    border-color: var(--rose-accent);
     color: #fff;
   }
   .card{
@@ -185,9 +190,8 @@
 <body>
 
 <header>
-  <span class="eyebrow">10 de dezembro de 2026</span>
+  <span class="eyebrow">Meus 15 anos</span>
   <h1>Sugestões de Presentes</h1>
-  <p>Uma seleção de sugestões de presentes para celebrar este momento inesquecível.</p>
 </header>
 
 <div class="filters">
