@@ -8,12 +8,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Allura&family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --rose-dark: #c17d94;
-    --bg: #faf6ef;
-    --rose-mid: #d1a3b3;
-    --rose-light: rgba(209, 163, 179, 0.22);
-    --rose-accent: #c17d94;
-    --ink: #3a332f;
+    --rose-dark: #DBA9B7;
+    --bg: #F1F0EC;
+    --rose-mid: #DBA9B7;
+    --rose-light: rgba(219, 169, 183, 0.22);
+    --rose-accent: #DBA9B7;
+    --ink: #514846;
+    --muted: #756B68;
   }
   *{box-sizing:border-box; margin:0; padding:0;}
   body{
@@ -58,7 +59,7 @@
   header .script-title::after{
     content:"";
     height:1px;
-    background:rgba(193,125,148,.72);
+    background:rgba(219,169,183,.72);
     flex:1 1 80px;
     max-width:155px;
   }
@@ -77,8 +78,7 @@
     margin-top: 16px;
     font-weight: 300;
     font-size: 15px;
-    color: var(--ink);
-    opacity: 0.75;
+    color: var(--muted);
     line-height: 1.6;
   }
   .grid{
@@ -101,7 +101,7 @@
   }
   .card:hover{
     transform: translateY(-3px);
-    box-shadow: 0 10px 24px rgba(140,92,89,0.1);
+    box-shadow: 0 10px 24px rgba(81,72,70,0.1);
   }
   .card .icon-row{
     display: flex;
@@ -126,8 +126,7 @@
   }
   .card .meta{
     font-size: 14px;
-    color: var(--ink);
-    opacity: 0.65;
+    color: var(--muted);
     font-weight: 300;
     line-height: 1.6;
   }
@@ -136,8 +135,7 @@
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
-    color: var(--ink);
-    opacity: 0.65;
+    color: var(--muted);
     letter-spacing: normal;
     line-height: 1.6;
     margin-top: auto;
@@ -153,8 +151,7 @@
   .card .desc{
     font-size: 13.5px;
     font-weight: 300;
-    color: var(--ink);
-    opacity: 0.8;
+    color: var(--muted);
     line-height: 1.55;
   }
   footer{
@@ -182,20 +179,20 @@
     font-size: 11px;
     color: var(--rose-dark);
     background: rgba(255,255,255,0.42);
-    border: 1px solid rgba(193,125,148,0.30);
+    border: 1px solid rgba(219,169,183,0.30);
     border-radius: 999px;
     padding: 8px 17px;
     cursor: pointer;
     transition: background .2s ease, color .2s ease, border-color .2s ease, transform .2s ease;
   }
   .filters button:hover{
-    border-color: rgba(193,125,148,0.55);
-    background: rgba(209,163,179,0.12);
+    border-color: rgba(219,169,183,0.55);
+    background: rgba(219,169,183,0.12);
     transform: translateY(-1px);
   }
   .filters button.active{
-    background: rgba(193,125,148,0.12);
-    border-color: rgba(193,125,148,0.55);
+    background: rgba(219,169,183,0.12);
+    border-color: rgba(219,169,183,0.55);
     color: var(--rose-dark);
   }
   .card{
